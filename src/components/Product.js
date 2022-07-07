@@ -1,7 +1,9 @@
 import React from 'react'
 import './Product.css';
+import { Option } from './Option';
 
 const Product = () => {
+    const options = ['Option 1', 'Option 2', 'Option 3'];
     return (
         <>
             <header className="top-heading">Awesome Portal</header>
@@ -14,7 +16,14 @@ const Product = () => {
                     <div className="details-heading">
                         <h1>Excellent Necklace 6*8</h1>
                         <h1>Diamond Ad</h1>
-
+                        <small>ABC Sales Pvt. LTD</small>
+                    </div>
+                    <div className="option-container">
+                        <div className="colorHeading"><p>
+                            Colors Available</p></div>
+                        <div className="color">
+                            <Option options={options} />
+                        </div>
                     </div>
                     <div className="details-container">
                         <p>
